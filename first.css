@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.1)),url(se.jpg);
+    background-position: center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    font-family: 'poppins',serif;
+    border:1px solid black;
+    padding: 10px 40px;
+    color: #1e90ff;   
+    top: 230px;
+    right: 8px;
+    border-radius: 0px 20px;
+    
+    
+}
+.start{
+    display: inline-block;
+    text-decoration: none;
+    color: #1e90ff;
+    border: 1px solid #1e90ff;
+    background: #fff;
+    padding: px 34px;
+    font-size: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 2);
+    position: relative;
+    cursor: pointer;
+}
+.start:hover{
+    border:1px solid #1e90ff;
+    background: #1e90ff;
+    color: #fff;
+    transition: 1s;
+}
+.pres h1{
+    margin-left: -570px;
+    font-size: 40px;
+    margin-bottom: 8px;
+    color: #dee0ec;
+
+  }
+  .pres p{
+    margin-left: -530px;
+    font-size: 20px;
+    color: #fff;
+
+  }
+  :root {
+    --main-color: #ecf0f1;
+    --point-color: #1e90ff;
+    --size: 5px;
+  }
+  .loader {
+    
+    overflow: hidden;
+    right: 601px;
+    
+    height: 100vh;
+    position: fixed;
+    top: 280px; 
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;  
+    z-index: 100000;
+  }
+  
+  .loader__element {
+    border-radius: 100%;
+    border: var(--size) solid var(--point-color);
+    margin: calc(var(--size)*2);
+  }
+  
+  .loader__element:nth-child(1) {
+    animation: preloader .6s ease-in-out alternate infinite;
+  }
+  .loader__element:nth-child(2) {
+    animation: preloader .6s ease-in-out alternate .2s infinite;
+  }
+  
+  .loader__element:nth-child(3) {
+    animation: preloader .6s ease-in-out alternate .4s infinite;
+  }
+  
+  @keyframes preloader {
+    100% { transform: scale(2); }
+  }

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>presentation</title>
+    <link rel="stylesheet" href="part2.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <div class="nav-links" id="nav-links">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="part1.html">Part1</a></li>
+              <li><a href="part2.html">Part2</a></li>
+              <li><a href="css.html">Part3</a></li>
+              <li><a href="start.html">Part4</a></li>
+          </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box anim">
+      <h1 .class="anim">&#x2119;art 2</h1>
+      <h3>Typography,Mouse Cursor,
+        Table Styling,<br>Float& Clear,
+        Box-Shadow,Position,Index& <br>Liste-Styling
+      </h3>  
+  </div>
+ </section>
+    <h1>TYPOGRAPHY:</h1>
+    <div>
+        <h2>Font-family:</h2> <p>Changer la police de caractère d’un texte donné. </p> </div>
+        <h3>font-family:  serif;</h3> 
+         <p class="a">Bonjour tout le monde</p>
+         <h3>font-family: sans-serif;</h3> 
+         <p class="b">Bonjour tout le monde</p>    
+         <h3>font-family: monospace ;</h3>  
+         <p class="c">Bonjour tout le monde</p>
+         <h3>font-family: cursive ;</h3>        
+         <p class="d">Bonjour tout le monde</p>        
+    <div>
+        <h2>Font-size:</h2> 
+        <p>-Plusieurs unités sont possibles : <br>
+            • px (pixels) <br>
+            • % (pourcentage, 100% = normal) <br>
+            • em (taille relative, 1.0 = normal) <br>
+            • ex (taille relative à la hauteur de la lettre "x". 1.0 = normal) <br>
+            • nom de taille : 
+            <ul type="square">
+                 <li> <b>xx-small:</b> très très petit </li> 
+                 <li> <b>x-small :</b> très petit </li> 
+                 <li><b>small :</b> petit </li> 
+                 <li> <b>medium :</b> moyen </li> 
+                 <li><b>large :</b> grand </li> 
+                 <li> <b>x-large :</b> très grand </li> 
+                 <li> <b>xx-large :</b> très très grand</li> 
+                </ul>    
+        </p>
+    </div>
+    <div>
+        <h2>Font-weight:</h2> <p>fixe l'épaisseur d’un texte.</p>
+        <ul>
+            <li><b>bold:</b>  gras </li> 
+             <li> <b> bolder :</b> plus gras </li> 
+              <li><b>  lighter :</b> plus fin</li> 
+              <li> <b>normal :</b> pas gras (par défaut) </li>
+        </ul>
+    </div>
+    <div>
+        <h2>Font-variant:</h2><p>met le texte en petites capitales.</p>
+        <ul>
+            <li><b>small-caps :</b> petites capitales </li> 
+             <li><b>normal :</b> normal (par défaut)</li>
+        </ul>
+    </div>
+    <div>
+        <h2>text-transform:</h2><p>Définit la façon d'utiliser les lettres capitales pour le texte d'un élément</p>
+        <ul>
+           <li><b>uppercase:</b> tout mettre en majuscules </li> 
+             <li> <b> capitalize :</b>début des mots en majuscules</li> 
+              <li><b> lowercase :</b> tout mettre en minuscules</li> 
+              <li> <b>none :</b>normal (par défaut)</li>
+        </ul>
+    </div>
+    <h1>MOUSE CURSOR:</h1> <p class="id">Définit la forme du curseur (s'il y en a un) lorsque le pointeur est au-dessus de l'élément.</p>
+       <h3>cursor: pointer;</h3> 
+       <p class="e">Bonjour </p>
+       <h3>cursor: grabbing;</h3>        
+       <p class="h">Bonjour </p>  
+       <h3>cursor: all-scroll;</h3> 
+       <p class="i">Bonjour </p>
+       <h3>cursor: cell;</h3> 
+       <p class="j">Bonjour </p>    
+       <h3>cursor: none;</h3>  
+       <p class="k">Bonjour </p>
+       <h3>cursor: wait;</h3>  
+       <p class="l">Bonjour </p>
+       <h1>FLOAT:</h1> <p class="id">Indique qu'un élément doit être retiré du flux normal et doit être placé sur le côté droit ou sur le côté gauche de son conteneur.</p>
+     <ul>
+        <li><b>left :</b>flottant à gauche </li>
+         <li><b>right:</b> flottant à droite </li>
+         <li> <b>none :</b> pas de flottant (par défaut) </li>
+     </ul>
+     <h1>CLEAR:</h1><p class="id">Stopper un flottant</p>
+     <ul>
+        <li><b>left :</b>supprime l'effet d'un flottant à gauche précédent</li>
+         <li><b>right:</b> supprime l'effet d'un flottant à droite précédent </li>
+         <li> <b>none :</b> pas de suppression de l'effet du flottant  </li>
+         <li> <b>both :</b> supprime l'effet d'un flottant précédent, qu'il soit à gauche ou à droite </li>
+     </ul>
+       <h1>OPACITY:</h1> <p class="id"> -Rendre un élément transparent</p>
+       <p class="id1"> -On a le mot Technologie sans opacity:<p>
+        <div>
+          <p>*Technologie</p>
+          <p class="id1">-Avec { Opacity:  0.2  ; } </p>
+          <p class="ola">*Technologie </p> 
+        </div>
+    <h1>Position:</h1>
+    <img src="position.jpg">
+    <h1>Index:</h1><p class="id">permet pour les éléments positionnés de définir quel élément sera placé au-dessus de l'autre</p>
+      <img src="index.jpg">
+
+<!--list styling-->
+    <h1>List-styling:</h1>
+     
+      <div class="m">
+        <h2>list-style-type:</h2>
+        <p>ORDERED:</p>
+       <div class="q">
+        <div class="carre">
+          <p>#list-style-type: decimal; </p>
+           <ol>
+             <li>Data squad</li> 
+           </ol>
+        </div>
+       </div>
+      </div>
+      <div class="q">
+        <div class="carre">
+          <p>#list-style-type: upper-alpha; </p>
+         <div class="n">
+          <ol>
+            <li>Data squad</li>
+          </ol>
+         </div>
+        </div>
+      </div>
+      <div>
+           <p>UNORDERED:</p>
+             <div class="q">
+                <div class="carre">
+                   <p>#list-style-type: square; </p>
+                  <div class="o">
+                    <ul>
+                       <li>Data squad</li>
+                    </ul>
+                  </div>
+                </div>
+             </div>
+            </div>
+      </div>
+     <h2>list-style-position:</h2>    
+        <h3>inside:</h3>
+        <div class="list">
+          <div class="in">
+           <ul>
+            <li>algorithm</li>
+            <li>database</li>
+            <li>design</li>
+           </ul>
+          </div>
+        </div>
+        <h3>outside:</h3>
+        <div class="list">
+        <div class="out"> 
+          <ul>
+             <li>algorithm</li>
+             <li>database</li>
+             <li>design</li>
+          </ul>
+        </div>
+      </div>
+    <h2>list-style-image:</h2>
+    <div>Indiquer l'url de l'image qui servira de puce. <br>
+      Exemple : list-style-image: url("images/puce.png")</div>
+    
+   <h1>Border radius:</h1>
+    <div class="B1">
+      <div class="z"></div>
+      <div class="y">
+        <p>Border-radius: 32px</p>
+      </div>
+    </div>
+    <br>
+    <div class="B2">
+      <div class="x"></div>
+      <div class="y">
+        <p>Border-radius: 48px 0</p>
+      </div>
+    </div><br>
+    <div class="B3">
+      <div class="w"></div>
+      <div class="y">
+        <p>Border-radius: 0 0 0 32px </p>
+      </div>
+    </div><br>
+    <div class="B4">
+      <div class="v"></div>
+      <div class="y">
+        <p>Border-radius: 64px 48px 16px 96px </p>
+      </div>
+    </div>
+    <h1>Table styling:</h1>
+    
+      <div class="para3">
+      <div class="para">
+        <p>Le code Css:</p>
+        <img src="tableau.jpg">
+      </div>
+    
+    <table border="1">
+      <thead>
+        <tr> <!-- nouvelle ligne -->
+          <th colspan="5">thead</th> <!-- colspan fusionne les cellules horizontal -->
+        </tr>
+      </thead>
+        <tr>
+          <td></td>
+          <td ></td> 
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+     <tfoot>
+       <tr>
+         <th colspan="5">tfoot</th>
+       </tr>
+     </tfoot>
+     </table> 
+    </div>
+
+    <h1>Box-shadow</h1>
+    <div class="boxall">
+      <br><br>
+        <div class="boxx">
+          <div class="box1">
+            <p>{ box-shadow: 0 20px 0 0 }</p>
+          </div><br>
+          <div class="box2">
+            <p>{ box-shadow: 20px 0 0 0 }</p>
+          </div>
+        </div>
+        <div class="boxy">
+          <div class="box3">
+            <p>{ box-shadow: 0 0 0 20px }</p>
+          </div><br>
+          <div class="box4">
+            <p>{ box-shadow: 0 0 20px 0 }</p>
+          </div>
+        </div>
+    </div>
+   
+   </div>
+</body>
+</html>

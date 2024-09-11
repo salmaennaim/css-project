@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+          
+          <div class="nav-links" id="nav-links">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="#">Part1</a></li>
+                  <li><a href="#">Part2</a></li>
+                  <li><a href="css.html">Part3</a></li>
+                  <li><a href="start.html">Part4</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box anim">
+          <h1 .class="anim">&#x2119;art 3</h1>
+          <h3>Filter,FlexBox,<br>
+            Gradient,Grid & <br>variable
+          </h3>
+             
+      </div>
+     </section>
+    
+   <div class="container anim">
+    <h1>Image .<p>Filter</p></h1>
+    <div class="one">
+        <img src="What.jpg" width="300" height="150">
+        <h4>filter:<p> blur(5px);</p></h4>
+        <div class="sa"><img src="one.jpg" width="300" height="150"></div>
+        
+    </div>
+    <div class="two"><img src="What.jpg" width="300" height="150"><h4>filter:<p> brightness(150%);</p></h4>
+        <div class="sa"><img src="two.jpg" width="300" height="150"></div></div>
+    <div class="tree"><img src="What.jpg" width="300" height="150"><h4>filter:<p> grayscale(100%);</p></h4>
+        <div class="sa"><img src="tree.jpg"width="300" height="150"></div></div>
+      </div>
+      <div class="fbox"> <h1>FlexBox</h1>
+        <div class="flex-direction">
+            <h3><i>Flex Direction</i></h3>
+            <p>&#x2618; Flex-Direction: row;</p>
+            <div class="row">
+                <div class="o1">1</div>
+                <div class="o1">2</div>
+                <div class="o2">3</div>
+                <div class="o2">4</div>
+            </div>
+            <p>&#x2618; Flex-Direction: row-reverse;</p>
+            <div class="row-reverse">
+                <div class="o1">1</div>
+                <div class="o1">2</div>
+                <div class="o2">3</div>
+                <div class="o2">4</div>
+            </div>
+            <div class="column1">
+                <p>&#x2618; Flex-Direction: column;
+                    </p>
+                    <h4>&#x21b3;</h4>
+                
+                <div class="column">
+                    <div class="o1">1</div>
+                    <div class="o1">2</div>
+                    <div class="o2">3</div>
+                    <div class="o2">4</div>
+                </div>
+                <p>&#x2618; Flex-Direction: column-reverse;</p>
+                <h4>&#x21b3;</h4>
+                <div class="column-reverse">
+                    <div class="o1">1</div>
+                    <div class="o1">2</div>
+                    <div class="o2">3</div>
+                    <div class="o2">4</div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="flex-wrap">
+            <h3><i>Flex-wrap</i></h3>
+            <p>&#x2618; Original</p>
+            <div class="orig">
+                <div class="o1">1</div>
+                <div class="o2">2</div>
+                <div class="o1">3</div>
+                <div class="o2">4</div>
+                <div class="o1">5</div>
+               
+                
+            </div>
+            <p>&#x2618; Flex-wrap:nowrap;</p>
+            <div class="nowrap">
+                <div class="o1">1</div>
+                <div class="o2">2</div>
+                <div class="o1">3</div>
+                <div class="o2">4</div>
+                <div class="o1">5</div>
+               
+                
+            </div>
+            <p>&#x2618;Flex-wrap:wrap;</p>
+            <div class="wrap">
+                <div class="o1">1</div>
+                <div class="o1">2</div>
+                <div class="o2">3</div>
+                <div class="o2">4</div>
+                <div class="o2">5</div>
+            </div>
+            <p>&#x2618;Flex-wrap:wrap-reverse;</p>
+            <div class="wrap-reverse ">
+                <div class="o1">1</div>
+                <div class="o1">2</div>
+                <div class="o2">3</div>
+                <div class="o2">4</div>
+                <div class="o2">5</div>
+            </div>
+            </div>
+        </div>
+        <div class="justify-content">
+            <h3><i>Justify-content</i></h3>
+            <p>&#x2618; Flex-start</p>
+            <div class="flex-st">
+                <div class="o1">1</div>
+                <div class="o2">2</div>
+                <div class="o1">3</div>
+            </div>
+            <p>&#x2618; Flex-end</p>
+            <div class="flex-end">
+                <div class="o1">1</div>
+                <div class="o2">2</div>
+                <div class="o1">3</div>
+            </div>
+            <p>&#x2618; center</p>
+            <div class="center">
+                <div class="o1">1</div>
+                <div class="o2">2</div>
+                <div class="o1">3</div>
+            </div>
+            <p>&#x2618; space-between</p>
+            <div class="space-between">
+                <div class="o1">1</div>
+                <div class="o2">2</div>
+                <div class="o1">3</div>
+            </div>
+        </div>
+        </div>
+        <div class="align-items">
+            <h3><i>Align-items</i></h3>
+            <p>&#x2618; Flex-start</p>
+            <div class="flex-st">
+                <div class="o1">1</div>
+                <div class="o2">2</div>
+                <div class="o1">3</div> 
+            </div>
+            <p>&#x2618; Flex-end</p>
+            <div class="flex-end">
+                <div class="o1">1</div>
+                <div class="o2">2</div>
+                <div class="o1">3</div>    
+            </div>
+            <p>&#x2618; center</p>
+            <div class="center">
+                <div class="o1">1</div>
+                <div class="o2">2</div>
+                <div class="o1">3</div>
+            </div>
+            <p>&#x2618; stretch</p>
+            <div class="stretch">
+                <div class="o1">1</div>
+                <div class="o2">2</div>
+                <div class="o1">3</div>
+            </div>
+            
+            </div> 
+        </div>
+    </div>
+    <div class="GRADIENT"> <h1>GRADIENT</h1>
+        <div class="text-gr">
+            <h3> HELLO WORLD</h3>
+            <img src="tg.jpg" width="300" height="150">
+
+        </div>
+    </div>
+    <div class="grid"><h1>GRID</h1>
+        <center><img src="gr2.png" width="70%" height="10vh"></center>
+        <h3>&#x2618; FlexBox and Grid</h3>
+        <img src="flexbox.jpg">
+        <h3>&#x2618; Grid-Temolate</h3>
+        <p>-grid-temolate-columns:..px;<br>
+            -grid-temolate-columns:..%;<br>
+            -grid-temolate-columns:..fr ..fr;<br>
+            -grid-temolate-columns: repeat(..,..fr);<br>
+        </p><br><br>
+        <div class="grid-gap">
+            <img src="HTML.jpg" width="200" height="100" >
+            <img src="CSS.jpg" width="300">
+            <img src="BLUE.jpg" width="500"></div>
+        
+    </div><br><br>
+    <p>-grid-temolate-rows:..px;<br>
+        -grid-temolate-rows:..%;<br>
+        -grid-temolate-rows:..fr ..fr;<br>
+        -grid-temolate-rows: repeat(..,..fr);<br>
+    </p><br><br>
+    <div class="grid-gap">
+        <img src="HTML.jpg" width="200" height="100" >
+        <img src="rows.jpg" width="300">
+        <img src="rowsex.jpg" width="300" height="150"></div>
+    
+</div><div class="grid5"><h3><i>Grid-Gap</i></h3>
+   
+    <p>&#x2618;  Grid-Column&  Grid-Row</p><br>
+    <br>
+    <div class="grid-gap">
+        <img src="HTML.jpg" width="200" height="100" >
+        <img src="gap.jpg" width="300">
+        <img src="gap2.jpg" width="500"></div>
+    
+</div><br><br>
+<div class="grid-gap2">
+    
+    <p>&#x2618;  Grid-Gap</p><br>
+    <p> -Exemple :</p><br><br>
+    <div class="gap-col-row">
+        
+        <div class="o3"> grid-column-gap: 20px; </div>+
+        <div class="o3"> grid-row-gap: 10px; </div>=
+        <div class="o3"> grid-gap: 20px 10px;</div><br>
+        
+         </div>
+    
+    <div class="grid-gap1">
+        <div class="o0">1</div>
+        <div  class="o0 o4">2</div>
+        <div  class="o0">3</div> 
+        <div  class="o0">4</div>
+        <div  class="o0">5</div>
+        <div  class="o0">6</div> 
+        <div  class="o0">7</div> 
+        <div  class="o0">8</div>
+        <div  class="o0">9</div>
+        <div  class="o0">10</div> 
+    </div>
+    -More information about grid gap
+<video src="gap-c.mp4" controls class="vd"></video></div></div>
+<div class="area"><h3><i>Grid-Area</i></h3>
+     <img src>
+     <img src>
+     <img src="area.jpg">
+</div>
+
+
+    <div class="variable"> <h1>VARIABLE</h1>
+        <h3>&#x2618; Global Variable</h3>
+        <div class="root">
+            <p class="wow">root{<br>
+                --<u>VariableName</u>: COLOR;<br>
+            }<br>
+            selector{<br>
+                color: var(<u>VariableName</u>, FallbackValue)<br>
+            }</p>
+        <img src="root.jpg">
+        </div>
+        <h3>&#x2618; Local Variable</h3>
+        <div class="rkt"><p>
+            selector{<br>
+            --<u>VariableName</u>: COLOR;<br>
+            color: var(<u>VariableName</u>, FallbackValue)<br>
+            }  
+        
+    </p>
+        <img src="fidb.jpg">
+        </div>
+    </div>
+</body>
+</html>

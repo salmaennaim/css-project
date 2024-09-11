@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one1{
+            text-align: center;
+            padding: 40px;
+            width: 50px;
+            height: 20px;
+            border-radius: 10%;
+            background-color: #d3785d;
+            transform: rotate(0deg);
+            display: flex;
+            margin: 20PX 20PX ;
+        
+        }
+        .one1:hover{
+            transform: rotate(45deg);
+        }
+        .two2{
+            text-align: center;
+            padding: 40px;
+            width: 50px;
+            height: 20px;
+            border-radius: 10%;
+            background-color:#d3785d;
+            transform: rotate(0deg);
+            display: flex;
+            margin: 20PX 20PX ;
+        }
+        .two2:hover{
+            transform: rotate(-45deg);
+        }
+        .three3{
+            text-align: center;
+            padding: 40px;
+            width: 50px;
+            height: 20px;
+            border-radius: 10%;
+            background-color: #d3785d;
+            transform: scale(1);
+            display: flex;
+            margin: 20PX 20PX ;
+        }
+        .three3:hover{
+            transform: scale(1.5);
+        }
+        .four4{
+            text-align: center;
+            padding: 40px;
+            width: 50px;
+            height: 20px;
+            border-radius: 10%;
+            background-color:#d3785d;
+            transform: scale(1, 1);
+            display: flex;
+            margin: 20PX 20PX ;
+        }
+        .four4:hover{
+            transform: scale(1.5 , 2);
+        }
+        .cinq5{
+            text-align: center;
+            padding: 40px;
+            width: 50px;
+            height: 20px;
+            border-radius: 10%;
+            background-color: #d3785d;
+            transform: translate(0 , 0);
+            display: flex;
+            margin: 20PX 20PX ;
+        }
+        .cinq5:hover{
+            transform: translate(25px, 40px);
+        }
+        .six6{
+            text-align: center;
+            padding: 40px;
+            width: 50px;
+            height: 20px;
+            border-radius: 10%;
+            background-color: #d3785d;
+            transform: skew(0deg);
+            display: flex;
+            margin: 20PX 20PX ;
+        }
+        .six6:hover{
+            transform: skew(45deg);
+        }
+        .seven7{
+            text-align: center;
+            padding: 40px;
+            width: 50px;
+            height: 20px;
+            border-radius: 10%;
+            background-color: #d3785d;
+            transform: skew(0deg);
+            display: flex;
+            margin: 20PX 20PX ;
+        }
+        .seven7:hover{
+            transform: skew(-45deg);
+        }
+        .pa{
+            display: flex;
+            background:  rgb(61, 57, 57);
+            margin: 20px 10px;
+            height: 150px;
+            width: 900px;
+            margin-left: 650px;
+            text-align: center;
+        }
+        p{
+            margin: 60px 20px;
+            color: azure;
+        }
+        .sa{
+            color: #d3785d;
+            font-size: 30px;
+            margin: 60px 20px;
+        }
+        .pa{
+            color: white;
+            font-size: 30px;
+        }
+        .pas{
+            margin: 60px 20px;   
+        }
+        .h1{
+            background: #f5d0c5;
+            width: 100%;
+            font-size: 40px;
+            border-radius: 7%;
+        }
+        .pop{
+            color: rgb(0, 84, 122);
+            font-size: 30px;
+        }
+        .bab{
+            font-size: 30px;
+            color: black;
+        }
+        .bo{
+            font-size: 50px;
+            text-align: center;
+            height: 110px;
+            width: 300px;
+            background: #d69f7e;
+            animation-name:boxx;
+            animation-duration: 5s;
+            animation-delay: 3s;
+            animation-iteration-count: 2;
+            animation-fill-mode: forwards;
+        }
+        @keyframes boxx{
+            from{
+                background:  #d69f7e;
+                width: 300px;
+            }
+            to{
+                background:  #d69f7e;
+                width: 100%;
+            }
+        }
+        .ma{
+            font-size: 50px; 
+            text-align: center;
+            height: 110px;
+            width: 300px;
+            background: #d69f7e;
+            animation-name:boxx;
+            animation-duration: 5s;
+            animation-delay: 0.5s;
+            animation-iteration-count: 2;
+            animation-fill-mode: forwards;
+        }
+        .me{
+            font-size: 50px; 
+            text-align: center;
+            height: 110px;
+            width: 300px;
+            background: #d69f7e;
+            animation-name:boxx;
+            animation-duration: 5s;
+            animation-delay: 0.5s;
+            animation-iteration-count: 2;
+            animation-fill-mode: forwards;
+        }
+        @keyframes boxx{
+            from{
+                background: #d69f7e;
+                width: 300px;
+            }
+            to{
+                background:  #d69f7e;
+                width: 100%;
+            }
+        }
+        .img{
+            display: flex;
+            margin:10px;
+            padding: 10PX;
+            justify-content: space-between;
+        }
+        .img1{
+            margin-left: 200px;
+        }
+        .img2{
+            margin-right: 200px;
+        }
+        body{
+            background: rgb(219, 207, 207);
+        }
+        .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,40,0.7),rgba(4,8,29,0.5)),url(first.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 80px;
+    margin-left: -60px;
+    margin-bottom: 70px;
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}   
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 45px;
+    position: relative;
+    margin-bottom: 100px;
+    margin-right: -70px;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.text-box h1{
+    font-size: 150px;
+    margin-bottom: 20px;
+}
+.box1{
+            text-align: center;
+            height: 100px;
+            width: 100px;
+            background:  #d3785d;
+            border-radius: 30%;
+            animation-name:boxx1;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 0.5s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: both;
+            animation-play-state: running; 
+        }
+        div:hover{
+            animation-play-state: paused;
+
+        }
+        @keyframes boxx1{
+            0%{
+                translate: 0 0;
+                background:  #d3785d;
+                rotate: 0;
+            }
+            25%{
+                translate: 0 200px;
+                background:  rgb(219, 207, 207);
+                rotate: 90deg;
+            }
+            50%{
+                translate: 400px 200px;
+                background: #d3785d;
+                rotate: 180deg;
+            }
+            75%{
+                translate: 400px 0px;
+                background:  rgb(219, 207, 207);
+                rotate: 270deg;
+            }
+            100%{
+                translate: 0px 0px;
+                background: #d3785d;
+                rotate: 360deg;
+            }
+        }
+        .text-box h3{
+    font-size: 40px;
+    color: #0a0909;
+    margin-left: 20px;   
+}
+.exm{
+            font-size: 30px;
+            height: 60px;
+            width: 100px;
+            background: #000;
+            color: white;
+            transition: all 3s ease 1s;
+        }
+        .exm:hover{
+            width: 100%;
+        }
+        .ig1{
+            display: flex;
+            margin:10px;
+            padding: 10PX;
+            justify-content: space-between;
+        }
+        .ig11{
+            margin-left: 400px;
+        }
+        .ig22{
+            margin-right: 400px;
+        }
+        .ig2{
+             display: flex;
+            margin:10px;
+            padding: 10PX;
+            justify-content: space-between;
+        }
+        .ig33{
+            margin-left: 400px;
+        }
+        .ig44{
+            margin-right: 400px;
+        }
+        .ig3{
+             display: flex;
+            margin:10px;
+            padding: 10PX;
+            justify-content: space-between;
+        }
+        .ig55{
+            margin-left: 400px;
+        }
+        .ig66{
+            margin-right: 400px;
+        }
+        .ig4{
+             display: flex;
+            margin:10px;
+            padding: 10PX;
+            justify-content: space-between;
+        }
+        .ig6{
+            margin-left: 200px;
+        }
+        img:hover{
+            box-shadow: 0px 0px 25px 0px;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+          <div class="nav-links" id="nav-links">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="part1.html">Part1</a></li>
+                  <li><a href="part2.html">Part2</a></li>
+                  <li><a href="css.html">Part3</a></li>
+                  <li><a href="start.html">Part4</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box anim">
+          <h1 .class="anim">&#x2119;art 4</h1>
+          <h3>Transform,Animation,<br>Media&<br>Transition
+          </h3>  
+      </div>
+     </section>
+    <h1 class="ma"><i>Transform css</i></h1>
+    <p class="bab"> 
+        La propriété de Transformation
+CSS transform permet de spécifier le type de transformation 2d ou 3dà appliquer sur un élément HTML.
+    </p>
+    <div class="pa"><div class="one1">
+    </div> <p><div class="sa">transform: </div><p class="pas">rotate(45deg);</p></p></div>
+    <div class="pa"><div class="two2">
+    </div> <p><div class="sa">transform: </div><p class="pas">rotate(-45deg);</p></p></div>
+    <div class="pa"><div class="three3">
+    </div> <p><div class="sa">transform: </div><p class="pas">scale(1.5);</p></p></div>
+    <div class="pa"><div class="four4">
+    </div> <p><div class="sa">transform: </div><p class="pas">scale(1.5,2);</p></p></div>
+    <div class="pa"><div class="cinq5">
+    </div> <p><div class="sa">transform: </div><p class="pas">translate(20px,40px);</p></p></div>
+    <div class="pa"><div class="six6">
+    </div> <p><div class="sa">transform: </div><p class="pas">skew(45deg);</p></p></div>
+    <div class="pa"><div class="seven7">
+    </div> <p><div class="sa">transform: </div><p class="pas">skew(-45deg);</p></p></div>
+    <h1 class="bo"><i>Animations CSS</i></h1>
+    <p class="bab">Une animation CSS est toujours definie par une regle
+    @Keyframes suivie du nom de votre animation. C'est ensuite a l'interieur de ce bloc 
+    que vous indiquerez les etspes de l'animation et les proprietes des differents element.<br>
+     CSS permet d'animer des elements HTML sans utiliser
+     JavaScript!<br><br>Dans ce chapitre, vous decouvrirez
+     les proprietes suivants:
+     <p class="pop">
+        ~@Keyframes<br>
+        ~Animation Name<br>
+        ~Animation Duration<br>
+        ~Animation Delay<br>
+        ~Animation Iteration Count<br>
+        ~Animation Direction<br>
+        ~Animation Timing function<br>
+        ~Animation Fill mode<br>
+        ~Animation Play State<br>
+        ~Animation
+     </p>
+    </p>
+    <div class="box1"></div><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1 class="h1">Keyframes:</h1>
+    <div class="img">
+    <img class="img1" src="key1jpg.jpg"width="600px">
+    <br>
+    <img class="img2" src="key2.jpg" width="600px">
+    </div>
+    <h1 class="h1">Animation Duration:</h1><br>
+    <center><img src="dur.jpg" width="600px"></center>
+    <h1 class="h1">Animation Delay:</h1><br><br>
+    <center><img src="del.jpg" width="600px"></center>
+    <h1 class="h1">Animation Iteration Count:</h1><br><br>
+    <center><img src="connn.img.jpg" width="600px"></center>
+   <h1 class="h1">Animation Direction:</h1><br><br>
+    <center><img src="dir.jpg" width="600px"></center>
+    <h1 class="h1">Animation Timing function:</h1><br><br>
+    <center><img src="func.jpg" width="600px"></center>
+    <h1 class="h1">Animation Fill mode:</h1><br><br>
+    <center><img src="fell.jpg" width="600px"></center>
+    <h1 class="h1">Animation Play State:</h1><br><br>
+    <center><img src="state.jpg" width="600px"></center>
+    <h1 class="h1">Animation:</h1><br><br>
+    <center><img src="tout.jpg" height="100px"></center>
+    <h1 class="me"><i>Media css</i></h1>
+    <p class="bab">La règle CSS @media permet de créer d'autres propriétés pour divers supports appelé aussi média (print, screen) au sein d'une même feuille de style.
+        On peut spécifier le ou les médias après la déclaration de la règle de feuille de style @media css</p>
+    <center><img src="pic/med1.jpg" width="400px"></center><br>
+    <div class="ig1"><img src="pic/med2.jpg" width="400px" class="ig11">
+        <h1>&#x2937</h1>
+    <img src="pic/p1.jpg" class="ig22"></div><br><br>
+    <div class="ig2"><img src="pic/med3.jpg" width="400px" class="ig33">
+        <h1>&#x2937</h1>
+    <img src="pic/p2.jpg" class="ig44"></div><br><br>
+    <div class="ig3"><img src="pic/med4.jpg" width="400px" class="ig55">
+        <h1>&#x2937</h1>
+    <img src="pic/p3.jpg" class="ig66"></div><br><br>
+    <div class="ig4"><img src="pic/p4.jpg" width="100px">
+        <h1>&#10550</h1>
+    <img src="pic/med5.jpg" width="400px" class="ig6">
+    <h1>&#x2937</h1>
+    <img src="pic/p5.jpg"></div>
+    <h1 class="me"><i>Transition css</i></h1>
+    <p class="bab">Les transitions CSS permettent de contrôler la vitesse d'animation lorsque les propriétés CSS sont modifiées. Plutôt que le changement soit immédiat, on peut l'étaler sur une certaine période. Ainsi, si on souhaite passer un élément de blanc à noir, on pourra utiliser les transitions CSS afin que cette modification soit effectuée progressivement, selon une courbe d'accélération donnée.</p>
+    <h1 class="h1">Transition Duration:</h1>
+    <center><img src="tran1jpg.jpg" width="600px"></center>
+    <h1 class="h1">Transition Property:</h1>
+    <center><img src="immmg1.jpg" width="600px"></center>
+    <h1 class="h1">Transition Delay:</h1>
+    <center><img src="tran2.jpg" width="600px"></center>
+    <h1 class="h1">Transition Timing Function:</h1>
+    <center><img src="inh8.jpg" width="600px"></center>
+    <h1 class="h1">Transition:</h1>
+    <center><img src="jp5.jpg" width="600px"></center>
+    <div class="exm">hello world</div>
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,40,0.7),rgba(4,8,29,0.5)),url(part4.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 80px;
+    margin-left: -60px;
+    margin-bottom: 70px;
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}   
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 45px;
+    position: relative;
+    margin-bottom: 100px;
+    margin-right: -70px;
+    ali
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.text-box h4{
+    font-size: 100px;
+    margin-bottom: 20px;
+    margin-left: 7px;
+    margin-top: -2px;
+}
+.text-box h3{
+    font-size: 15px;
+    color: black;
+    margin-left: 20px;
+    margin-top: -20px;    
+}
+ h1{
+    text-align: center;
+    background-color: rgb(145, 145, 209);
+    color: rgb(10, 10, 90);
+    font-size: 30px;
+}
+.img{
+    width: 1355PX;
+    
+}
+.S {
+    width: 100%;
+}
+body{
+    background-color: rgb(219, 207, 207);
+    justify-content: space-between;
+}
+.a{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+   
+    margin-left: 5PX;
+    margin-right: 5px;
+}
+.b{
+    display: flex;
+    font-size: 20px;
+   
+}
+.n{
+    margin-left: 500PX;
+    background-color: rgb(145, 145, 209);
+    color: rgb(10, 10, 90);
+}
+.k{
+    margin-left: 200PX;
+    background-color: rgb(145, 145, 209);
+    color: rgb(10, 10, 90);
+}
+.f{
+    margin-left: 15px; background-color: rgb(145, 145, 209);
+    color: rgb(10, 10, 90);
+}
+.d{
+    transform: scale(1.1);
+}
+.d:hover{
+    box-shadow: 0 0 20PX rgb(0, 0, 0);
+}
+.t{
+    transform: scale(1.1);
+    margin-left: 33px;
+}
+.t:hover{
+    box-shadow: 0 0 20PX rgb(0, 0, 0);
+}
+.l{
+    transform: scale(1.1);
+}
+.l:hover{
+    box-shadow: 0 0 20PX rgb(0, 0, 0);
+}
+.box{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+    margin-bottom: 15px;
+    padding: 10px;
+ 
+}
+ .box:hover{
+    border: 10px solid rgb(98, 98, 185);
+ }   
+   
+
+.v{
+    display: flex;
+    justify-content: space-between;
+
+}
+.h{
+    margin-right: 170PX;
+}
+.j{
+    font-size: 100px;
+    text-align: center;
+}
+.box2{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.box2:hover{
+    border: 10px dashed rgb(98, 98, 185);
+}
+.j2{
+    font-size: 100px;
+    text-align: center;
+}
+.j2:hover{
+    transform: translate(15px);
+    transition: 0.2s;
+}
+.j3{
+    font-size: 100px;
+    text-align: center;
+}
+.m{
+    display: flex;
+    justify-content: space-between;
+}
+.b{
+    margin-right: 165PX;
+}
+.box3{
+    background-color: black;
+   
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.box3:hover{
+    border: 10px double rgb(98, 98, 185);}
+.W{
+        display: flex;
+    justify-content: space-between;
+    }
+.lo{
+   
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+   
+}
+.s{
+    margin-left: 150px;
+    margin-right: 30px;
+}
+.s:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow:  0 0 15px rgb(75, 73, 73);
+}
+.u{
+    margin-bottom: 10PX;
+    margin-top: 15px;
+}
+.par{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.ch{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 15PX;
+   
+}
+.wx{
+    width: 600px;
+    height: 350PX;
+    overflow: hidden;
+    margin-left: 140PX;
+    margin-right: 150px;
+    float: left;
+}
+/*.di{
+    display: flex;
+}*/
+.sq{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.kk{
+  float: right;
+  
+}
+.di{
+ display: flex;
+}
+.wy{
+    margin-right: 100px;
+    float: right;
+}
+.image{
+    width: 500px;
+    height: auto;
+    justify-content: center;
+    margin-left: 200px;
+}
+.h3{
+    margin-bottom: 10px;
+}
+
+</style>
+<body>
+    <section class="header">
+        <nav>
+          <div class="nav-links" id="nav-links">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="part1.html">Part1</a></li>
+                  <li><a href="part2.html">Part2</a></li>
+                  <li><a href="css.html">Part3</a></li>
+                  <li><a href="start.html">Part4</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box anim">
+          <h4 .class="anim">&#x2119;art 1</h4>
+          <h3 class="h3">Background,Css selector,<br>Pseudo class & elements selector:<br>Css border-values
+          </h3>  
+      </div>
+     </section>
+    
+     <h1><i>Background</i></h1>
+    <div class="b">
+        
+       
+     <p class="f">background-image</p>
+     <P class="k">background-repeat</P>
+     <p class=" n">background-color</p>
+    </div>
+    <div class="a">
+     
+     <img src="bx.jpg" alt="" height="100PX" width="200PX" class="d">
+   
+     <img src="re.jpg" alt="" height="100PX" width="300" class="t"><br>
+     <img src="CR.jpg" alt="" height="100PX" class="l">
+ 
+    </div><br>
+    <img src="ta.jpg" alt="" class="img" ><br>
+    <h1><i>Css selector</i></h1>
+ <div class="fa">
+  
+     <DIV class="o">
+         <h2><i>&#x27A4 Universal Selector:</i></h2>
+         <div class="lo"> <br>-selects  all elements of any
+              type on HTML document.
+              <div class="j2">&#x27B1</div>
+            <img src="bl.jpg" alt="" class="s"><br>
+            <div class="j2">&#x27B1</div>
+            <p class="u">
+             This rule will change every HTML element on the page to have blue text
+            </p>
+         </div>
+     </DIV>
+ </div>
+ 
+ <DIV class="o">
+     <h2><i>&#x27A4 #id-name: Id selector:</i></h2>
+     <div class="lo"> <br>-selects  on  elements based on 
+          the value of its id="" attribute
+          <div class="j2">&#x27B1</div>
+        <img src="az.jpg" alt="" class="s"><br>
+        <div class="j2">&#x27B1</div>
+        <p class="u">
+         This rule will change add pandding of 3px to the element with id attribute of deo
+        </p>
+     </div>
+ </DIV>
+ <DIV class="o">
+     <h2><i>&#x27A4 Descendant Combinator:</i></h2>
+     <div class="lo"> <br>- A descendant Combinator allow us to target a child element.  <br>
+           <br> Select all child & grandchilds of a parent.
+          <div class="j2">&#x27B1</div>
+        <img src="yu.jpg" alt="" class="s"><br>
+        <div class="j2">&#x27B1</div>
+        <p class="u">
+         This rule will change the color of <,strong > elements that are child of <,p> to blue
+        </p>
+     </div>
+ </DIV>
+ <DIV class="o">
+     <h2><i>&#x27A4 Child Combinator:</i></h2>
+     <div class="lo"> <br>- Child  Combinator heps us to  select direct of the parent .  <br>
+           <br> Selects only direct child  &  not the grandchildren of a parent.
+          <div class="j2">&#x27B1</div>
+        <img src="ps.jpg" alt="" class="s"><br>
+        <div class="j2">&#x27B1</div>
+        <p class="u">
+         This rule will change the color of <,strong > elements that are direct child of <,p> to blue
+        </p>
+     </div>
+ </DIV>
+    <section>
+     <h1><i> Pseudo class & elements selector:</i></h1>
+     <DIV class="o">
+         <h2><i>&#x27A4: pseudo classes</i></h2>
+         <div class="lo"> <br>-  the : pseudo allow the selection of  elements based on state information <br> that not contained in the document tree.  <br>
+               <br> 
+              <div class="j2">&#x27B1</div>
+            <img src="hes.jpg" alt="" class="s"><br>
+            <div class="j2">&#x27B1</div>
+            <p class="u">
+             This rule will change the color of <,button >to blue when user pionter is hovered
+            </p>
+         </div>
+     </DIV>
+     <DIV class="o">
+         <h2><i>&#x27A4 :: pseudo elements </i></h2>
+         <div class="lo"> <br>- the:: pseudo represent entities  that  . 
+               <br> not included in HTML 
+              <div class="j2">&#x27B1</div>
+            <img src="f.jpg" alt="" class="s"><br>
+            <div class="j2">&#x27B1</div>
+            <p class="u">
+             This rule will change the color of <,strong > elements that are direct child of <,p> to blue
+            </p>
+         </div>
+     </DIV>
+     <h1><i>Css border-values</i></h1>
+     
+    </section>
+   <div class="v">
+     <div class="box"></div>
+     <div class="j2">&#x27B1</div>
+    <img src="bo.jpg" alt="" class="h">
+   </div><br><br>
+   <div class="m">
+     <div class="box2"></div>
+     <div class="j2">&#x27B1</div>
+     <img src="d.jpg" alt="" class="b">
+   </div><BR></BR>
+   <div class="W">
+     <div class="box3"></div>
+     <div class="j2">&#x27B1</div>
+     <img src="Y.jpg" alt="" class="b">
+ </div>
+ <h1><i>Box model</i></h1>
+ <div class="di">
+     <img src="ma.jpg" alt="" class="wx"><br> <br><img src="QS.jpg" alt="" class="wy">
+ </div>
+ <DIV class="o">
+     <h2><i>&#x27A4  margin auto:</i></h2 > 
+         <div class="sq">
+             <img src="po.jpg" alt="" class="kl" width="500px"> <br><img src="sd.jpg" alt="" class="kk" width="500px"> 
+           </div>  
+ </DIV>
+ <h1><i>Css Text</i></h1>
+    <DIV class="o">
+        <h2><i>&#x27A4 Text color:</i></h2>
+        <div class="lo"> <br>The color property is used to set the  <br>color of the text.
+             <div class="j2">&#x27B1</div>
+           <img src="ll.jpg" alt="" class="s"><br>
+          
+        </div>
+        <DIV class="o">
+            <h2><i>&#x27A4 Text Alignment </i></h2>
+            <div class="lo"> 
+                &#x27A4 text align: <br> <br><br><br>
+                &#x27A4  text-align-last <br> 
+                 <div class="j2">&#x27B1</div>
+               <img src="wxcjpg.jpg" alt="" class="s"><br>
+              
+            </div>
+            <DIV class="o">
+                <h2><i>&#x27A4 Text Direction : </i></h2>
+                <div class="lo"> <br>The direction and unicode-bidi <br> properties can be used to <br> change the text direction of an element:
+                     <div class="j2">&#x27B1</div>
+                   <img src="nb.jpg" alt="" class="s"><br>
+                  
+                </div>
+                 <div>
+                       
+                    </div><br>
+                <div class="image">
+                    <img src="bn.jpg" alt=""> <br><br>
+                    <img src="ss.jpg" alt=""> <br><br>
+                    <img src="tt.jpg" alt=""> <br><br>
+                    <img src="e.jpg" alt=""> <br><br>
+                    <img src="Wh.jpg" alt="">
+                </div>
+</body>
+</html>
